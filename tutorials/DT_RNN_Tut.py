@@ -298,8 +298,8 @@ if __name__=='__main__':
     state = {}
     # complete path to data (cluster specific)
     state['seqlen'] = 100
-    state['path']= "/data/lisa/data/PennTreebankCorpus/pentree_char_and_word.npz"
-    state['dictionary']= "/data/lisa/data/PennTreebankCorpus/dictionaries.npz"
+    state['path']= "tmp_data.npz"
+    state['dictionary']= "tmp_data_dict.npz"
     state['chunks'] = 'chars'
     state['seed'] = 123
 
