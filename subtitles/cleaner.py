@@ -1,11 +1,19 @@
 import argparse
 
+def clean(path):
+    subtitle = ''
+    return subtitle
+
 def main(parser):
     args = parser.parse_args()
     inputPath = args.input
     outputPath = args.output
-    print inputPath
-    print outputPath
+    
+    text = clean(inputPath)
+    outputFile = open(outputPath, 'w')
+    outputFile.write(text)
+    outputFile.close()
+
 
 def get_cleaner():
     usage = """There is only one argument which is the path to the subtitle file youu want to clean"""
